@@ -22,16 +22,16 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
         }
         
         header {
             background: linear-gradient(135deg, #004080 0%, #0066cc 100%);
             color: white;
-            padding: 30px 0;
+            padding: 20px 0;
             border-radius: 0 0 10px 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         
         .header-content {
@@ -39,75 +39,87 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+            gap: 15px;
         }
         
         .logo-title {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
+            flex: 1;
+            min-width: 250px;
         }
         
         .logo {
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: #ffcc00;
+            min-width: 40px;
         }
         
         h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 700;
+            line-height: 1.3;
         }
         
         .subtitle {
-            font-size: 1rem;
+            font-size: 0.9rem;
             opacity: 0.9;
-            margin-top: 5px;
+            margin-top: 3px;
         }
         
         .stats {
             background-color: rgba(255, 255, 255, 0.15);
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-size: 1.1rem;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            text-align: center;
+            min-width: 180px;
         }
         
         .main-content {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 15px;
         }
         
         .students-list {
             flex: 1;
-            min-width: 300px;
+            min-width: 280px;
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
             overflow: hidden;
+            max-width: 100%;
         }
         
         .list-header {
             background-color: #004080;
             color: white;
-            padding: 15px 20px;
+            padding: 12px 15px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
+            gap: 10px;
         }
         
         .list-header h2 {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
         
         .search-box {
             position: relative;
+            flex: 1;
+            min-width: 200px;
         }
         
         .search-box input {
             padding: 8px 12px 8px 35px;
             border-radius: 4px;
             border: none;
-            font-size: 0.9rem;
-            width: 200px;
+            font-size: 0.85rem;
+            width: 100%;
         }
         
         .search-box i {
@@ -120,27 +132,30 @@
         
         .filters {
             display: flex;
-            gap: 10px;
-            padding: 15px 20px;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 12px 15px;
             background-color: #f0f4f8;
             border-bottom: 1px solid #e0e6ed;
         }
         
         .filter-select {
-            padding: 8px 12px;
+            padding: 7px 10px;
             border-radius: 4px;
             border: 1px solid #ddd;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             background-color: white;
+            flex: 1;
+            min-width: 120px;
         }
         
         .students-container {
-            max-height: 600px;
+            max-height: 500px;
             overflow-y: auto;
         }
         
         .student-item {
-            padding: 15px 20px;
+            padding: 12px 15px;
             border-bottom: 1px solid #f0f0f0;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -158,9 +173,72 @@
         }
         
         .student-avatar {
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             background-color: #e0e6ed;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            color: #004080;
+            font-weight: bold;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .student-info h3 {
+            font-size: 1rem;
+            color: #004080;
+            margin-bottom: 2px;
+            line-height: 1.3;
+        }
+        
+        .student-info p {
+            font-size: 0.8rem;
+            color: #666;
+            line-height: 1.3;
+        }
+        
+        .student-details {
+            flex: 1;
+            min-width: 280px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: none;
+            max-width: 100%;
+        }
+        
+        .details-header {
+            background-color: #004080;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .details-header h2 {
+            font-size: 1.2rem;
+        }
+        
+        .details-content {
+            padding: 20px;
+        }
+        
+        .student-profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            flex-wrap: wrap;
+        }
+        
+        .profile-avatar {
+            width: 70px;
+            height: 70px;
+            background-color: #e6f2ff;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -168,87 +246,37 @@
             margin-right: 15px;
             color: #004080;
             font-weight: bold;
-            font-size: 1.2rem;
-        }
-        
-        .student-info h3 {
-            font-size: 1.1rem;
-            color: #004080;
-            margin-bottom: 3px;
-        }
-        
-        .student-info p {
-            font-size: 0.9rem;
-            color: #666;
-        }
-        
-        .student-details {
-            flex: 1;
-            min-width: 300px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
-            display: none;
-        }
-        
-        .details-header {
-            background-color: #004080;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .details-header h2 {
-            font-size: 1.4rem;
-        }
-        
-        .details-content {
-            padding: 30px;
-        }
-        
-        .student-profile {
-            display: flex;
-            align-items: center;
-            margin-bottom: 25px;
-            padding-bottom: 25px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .profile-avatar {
-            width: 80px;
-            height: 80px;
-            background-color: #e6f2ff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 20px;
-            color: #004080;
-            font-weight: bold;
-            font-size: 2rem;
+            font-size: 1.5rem;
             border: 3px solid #004080;
+            flex-shrink: 0;
+            margin-bottom: 10px;
+        }
+        
+        .profile-info {
+            flex: 1;
+            min-width: 200px;
         }
         
         .profile-info h3 {
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             color: #004080;
             margin-bottom: 5px;
+            line-height: 1.3;
         }
         
         .profile-info p {
             color: #666;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         
         .details-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
         }
         
         .detail-item {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
         
         .detail-label {
@@ -257,49 +285,53 @@
             margin-bottom: 5px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
+            font-size: 0.9rem;
         }
         
         .detail-label i {
             color: #004080;
-            width: 20px;
+            width: 18px;
         }
         
         .detail-value {
             color: #333;
-            padding-left: 28px;
+            padding-left: 24px;
+            font-size: 0.95rem;
         }
         
         .contact-info {
             background-color: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
         }
         
         .contact-info h4 {
             color: #004080;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
         }
         
         .contact-links {
             display: flex;
-            gap: 15px;
             flex-wrap: wrap;
+            gap: 10px;
         }
         
         .contact-link {
             display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 10px 15px;
+            gap: 6px;
+            padding: 8px 12px;
             background-color: white;
-            border-radius: 6px;
+            border-radius: 5px;
             text-decoration: none;
             color: #333;
             border: 1px solid #e0e6ed;
             transition: all 0.2s ease;
+            flex: 1;
+            min-width: 140px;
         }
         
         .contact-link:hover {
@@ -317,19 +349,19 @@
         
         .motivation-section {
             background-color: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
         }
         
         .motivation-section h4 {
             color: #004080;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
         }
         
         .motivation-item {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
         
         .motivation-item:last-child {
@@ -339,61 +371,203 @@
         .motivation-title {
             font-weight: 600;
             color: #555;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
+            font-size: 0.9rem;
         }
         
         .motivation-title i {
             color: #004080;
-            width: 20px;
+            width: 18px;
         }
         
         .motivation-content {
             color: #333;
-            line-height: 1.6;
-            padding-left: 28px;
+            line-height: 1.5;
+            padding-left: 24px;
             font-style: italic;
+            font-size: 0.9rem;
         }
         
         .empty-state {
-            padding: 50px 20px;
+            padding: 40px 15px;
             text-align: center;
             color: #888;
         }
         
         .empty-state i {
-            font-size: 3rem;
-            margin-bottom: 15px;
+            font-size: 2.5rem;
+            margin-bottom: 12px;
             color: #ccc;
         }
         
         .empty-state p {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         
+        /* Améliorations pour mobile */
         @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 15px 0;
+                border-radius: 0 0 8px 8px;
+                margin-bottom: 15px;
+            }
+            
+            .logo-title {
+                min-width: 100%;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            h1 {
+                font-size: 1.3rem;
+            }
+            
+            .stats {
+                min-width: 100%;
+                font-size: 0.9rem;
+                padding: 6px 10px;
+            }
+            
             .main-content {
                 flex-direction: column;
+                gap: 10px;
             }
             
             .students-list, .student-details {
                 width: 100%;
+                min-width: 100%;
             }
             
-            .header-content {
+            .list-header {
                 flex-direction: column;
-                align-items: flex-start;
-                gap: 15px;
+                align-items: stretch;
+                gap: 8px;
             }
             
-            .stats {
-                align-self: stretch;
+            .list-header h2 {
+                text-align: center;
             }
             
-            .search-box input {
-                width: 100%;
+            .search-box {
+                min-width: 100%;
+            }
+            
+            .filters {
+                flex-direction: column;
+            }
+            
+            .filter-select {
+                min-width: 100%;
+            }
+            
+            .students-container {
+                max-height: 400px;
+            }
+            
+            .student-profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-avatar {
+                margin-right: 0;
+                margin-bottom: 15px;
+                width: 80px;
+                height: 80px;
+            }
+            
+            .details-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+            }
+            
+            .contact-link {
+                min-width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        /* Pour les très petits écrans (téléphones) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 5px;
+            }
+            
+            h1 {
+                font-size: 1.1rem;
+            }
+            
+            .subtitle {
+                font-size: 0.8rem;
+            }
+            
+            .details-content {
+                padding: 15px;
+            }
+            
+            .profile-info h3 {
+                font-size: 1.1rem;
+            }
+            
+            .profile-info p {
+                font-size: 0.9rem;
+            }
+            
+            .student-avatar {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+            }
+            
+            .student-info h3 {
+                font-size: 0.9rem;
+            }
+            
+            .student-info p {
+                font-size: 0.75rem;
+            }
+        }
+        
+        /* Pour les tablettes en mode portrait */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .main-content {
+                flex-direction: row;
+            }
+            
+            .students-list, .student-details {
+                flex: 1;
+                min-width: 45%;
+            }
+        }
+        
+        /* Pour les très grands écrans */
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1400px;
+            }
+            
+            .students-container {
+                max-height: 700px;
             }
         }
     </style>
@@ -407,12 +581,12 @@
                         <i class="fas fa-university"></i>
                     </div>
                     <div>
-                        <h1>Annuaire des Étudiants</h1>
-                        <p class="subtitle">Institut National Polytechnique Félix Houphouët-Boigny (INP-HB)</p>
+                        <h1>Annuaire des Étudiants INP-HB</h1>
+                        <p class="subtitle">Conférence des Grandes Écoles - Côte d'Ivoire</p>
                     </div>
                 </div>
                 <div class="stats">
-                    <p><i class="fas fa-users"></i> <span id="studentCount">50</span> étudiants inscrits</p>
+                    <p><i class="fas fa-users"></i> <span id="studentCount">50</span> étudiants</p>
                 </div>
             </div>
         </div>
@@ -545,7 +719,7 @@
     </div>
 
     <script>
-        // Données des étudiants avec motivations (TOUS les étudiants)
+        // Données complètes des 50 étudiants avec toutes les informations
         const studentsData = [
             {
                 matricule: "22INP00601", 
@@ -617,7 +791,7 @@
                 email: "bambatom1paterne@gmail.com", 
                 whatsapp: "+225 05 65 44 16 13",
                 motivation1: "J'aspire intégrer la CGE pour étendre mon réseau, saisir les opportunités offertes par la CGE.",
-                motivation2: "Sportif que je suis  ça été pour moi une grande fierté de remporter les Inter-écoles Handball Homme avec l'école préparatoire aux grandes écoles en 2024. Cela révèle moi une personne à forte détermination, lorsqu'il s'agit de se battre pour atteindre un objectif fixé."
+                motivation2: "Sportif que je suis ça été pour moi une grande fierté de remporter les Inter-écoles Handball Homme avec l'école préparatoire aux grandes écoles en 2024. Cela révèle moi une personne à forte détermination, lorsqu'il s'agit de se battre pour atteindre un objectif fixé."
             },
             {
                 matricule: "24INP00090", 
@@ -689,7 +863,7 @@
                 email: "diom.karidja2102@gmail.com", 
                 whatsapp: "+225 07 67 13 26 56",
                 motivation1: "Pour la formation en leadership et pour me fait un bon réseau",
-                motivation2: "La chose que j'ai mené jusqu'au bout c'est Association. Cela a surtout révélé que quand je suis passionnée  d'un projet je le réussit toujours, mais aussi cela a révèle ma ténacité, ma détermination dans le travail et mon attachement au travail bien fait."
+                motivation2: "La chose que j'ai mené jusqu'au bout c'est Association. Cela a surtout révélé que quand je suis passionnée d'un projet je le réussit toujours, mais aussi cela a révèle ma ténacité, ma détermination dans le travail et mon attachement au travail bien fait."
             },
             {
                 matricule: "23INP00211", 
@@ -857,7 +1031,7 @@
                 email: "ndakouadio586@gmail.com", 
                 whatsapp: "+225 01 72 06 27 29",
                 motivation1: "La CGE me donnera l'opportunité d'intégrer un réseau structuré de professionnels expérimentés, favorisant l'échange, le mentorat et l'ouverture à des perspectives concrètes, ce qui constituera un appui réel dans la construction de mon parcours personnel et professionnel.",
-                motivation2: "En tant que vice président du bureau de la troisième promotion des prépas de l'Université Polytechnique de San-Pedro,  j'ai été amené à organiser l'arrivée des premières années en prépa, à attribuer des parrains à chacun d'eux et à assurer un suivi de leur résultat sur toute la durée de leurs années en prépa"
+                motivation2: "En tant que vice président du bureau de la troisième promotion des prépas de l'Université Polytechnique de San-Pedro, j'ai été amené à organiser l'arrivée des premières années en prépa, à attribuer des parrains à chacun d'eux et à assurer un suivi de leur résultat sur toute la durée de leurs années en prépa"
             },
             {
                 matricule: "22INP00273", 
@@ -904,8 +1078,8 @@
                 domaine: "Organisation", 
                 email: "graceastrid1@gmail.com", 
                 whatsapp: "+225 01 51 99 67 89",
-                motivation1: "Pour moi  la CGE est une association qui va me permettre au delà du reseautage d'acquérir de nouvelles compétences .",
-                motivation2: "En tant que chargée de la communication dans le bureau des classes preparatoires cette expérience a mis en évidence mon sens de l'organisation,  ma rigueur et mon attachement au travail bien fait."
+                motivation1: "Pour moi la CGE est une association qui va me permettre au delà du reseautage d'acquérir de nouvelles compétences.",
+                motivation2: "En tant que chargée de la communication dans le bureau des classes preparatoires cette expérience a mis en évidence mon sens de l'organisation, ma rigueur et mon attachement au travail bien fait."
             },
             {
                 matricule: "23INP00362", 
@@ -1000,7 +1174,7 @@
                 domaine: "Ressources Humaines et Intégrations", 
                 email: "kyowanndayisaba27@gmail.com", 
                 whatsapp: "+225 05 64 95 73 36",
-                motivation1: "La CGE représente un réseau riche que j'aimerai intégrer .",
+                motivation1: "La CGE représente un réseau riche que j'aimerai intégrer.",
                 motivation2: "En tant que PCO , Nous avons déjà eu à organiser 2 Akwaba l'an dernier celle des Euler (Famille Techno) et L'AEEDAY (Association des Élèves et Étudiantsdes Départements d'Aboisso et d'Adiaké à Yamoussoukro ) En tant que Vice DC du MOUVEMENT pour l'élection du BDE 2025 , Nous avons piloter les activités de la campagne"
             },
             {
@@ -1157,7 +1331,7 @@
                 email: "sahadkeiza@gmail.com", 
                 whatsapp: "+225 01 53 80 04 44",
                 motivation1: "Je souhaite rejoindre la CGE afin de m'engager activement dans la promotion de l'excellence académique, du leadership étudiant et de la collaboration entre les grandes écoles de Côte d'Ivoire, tout en contribuant à des actions à fort impact éducatif et sociétal.",
-                motivation2: "En tant que chargée des relations extérieures de l'amicale des ingénieurs de conception en agronomie  (Amicale ENSA) , je développe et consolide les partenariats pour le bon déroulement des activités, créant des liens solides entre les membres et les partenaires. Cette expérience illustre mon sens des responsabilités, ma capacité à fédérer et mon engagement passionné pour le rayonnement de ma communauté."
+                motivation2: "En tant que chargée des relations extérieures de l'amicale des ingénieurs de conception en agronomie (Amicale ENSA) , je développe et consolide les partenariats pour le bon déroulement des activités, créant des liens solides entre les membres et les partenaires. Cette expérience illustre mon sens des responsabilités, ma capacité à fédérer et mon engagement passionné pour le rayonnement de ma communauté."
             },
             {
                 matricule: "23INP00832", 
